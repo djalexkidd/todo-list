@@ -45,7 +45,7 @@ function createHTML(objet, key) {
     const html = `
             <span>${objet.todo}</span>
             <button name="trash" class="trash">🗑️</button>
-            <button name="check" class="check">✔️</button>
+            <button name="check" class="check">${objet.checked ? '🔄' : '✔️'}</button>
     `
 
     const li = document.createElement('li');
@@ -66,6 +66,7 @@ function toBin() {
 }
 
 function check() {
+    this.parentNode.classList.toggle('flip') // Flip Flop la main dans l'froc, Flop Flip la main dans l'slip!
     this.innerHTML = this.innerHTML === '✔️' ? "🔄" : "✔️";
     const key = this.parentNode.getAttribute('data-key');
     todoList[key].checked = !todoList[key].checked;

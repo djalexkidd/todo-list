@@ -1,3 +1,5 @@
+[Lien de la page](https://djalexkidd.github.io/todo-list)
+
 1ère étape : 
 - Il va falloir réussir à générer du HTML au moment où on tape dans le formulaire
 
@@ -11,10 +13,10 @@ Ici l'autre difficulté sera de faire une boucle autour d'un objet . Il faudra t
 On a ici un objet en dur dans notre javascript, mais on veut pouvoir effectuer de nouvelles entrées sur notre page et les ajouter à notre objet dynamiquement (timestamp)
 
 4eme étape : 
-Gérer les évènements. Les éléments créés dynamiquement ont du mal à récupérer les events. 
+- Gérer les évènements. Les éléments créés dynamiquement ont du mal à récupérer les events. 
 Quand on génère du HTML en dur, il suffit de récupérer l'élément HTML dans une constante et de venir vérifier une condition au clic sur mon élément. 
 Quand on génère du HTML en JS il faut chercher à passer un évènement sur un objet créé dynamiquement.
 
 5eme étape : 
-Enregistrer l'objet dans le localStorage
+- Enregistrer l'objet dans le localStorage
 Difficulté : On ne peut stocker que des chaînes de caractères (string) dans le localStorage, ici on veut stocker un objet, il faut trouver un moyen de transformer un objet en chaîne de caractère et quand on va le récupérer du localStorage il faudra à nouveau le transformer en objet. 
